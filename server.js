@@ -31,4 +31,5 @@ function requestHandler(req, res)
     {
         
     }
+    res.end('');
 }
