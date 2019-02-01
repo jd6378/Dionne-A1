@@ -44,7 +44,7 @@ function requestHandler(req, res)
                     min = parseFloat(query['grades'][i]);
                 sum += parseFloat(query['grades'][i]);
             }
-        res.write("Ave: " + sum/query['grades'].length + " Min: " + min + " Max: " + max)
+        res.write("Ave: " + (sum/query['grades'].length).toFixed(2) + " Min: " + min + " Max: " + max)
         
     }
     res.end('');
